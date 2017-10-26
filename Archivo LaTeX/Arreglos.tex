@@ -1,0 +1,647 @@
+%%%%%%%%%%%%  Generated using docx2latex.com  %%%%%%%%%%%%%%
+
+%%%%%%%%%%%%  v2.0.0-beta  %%%%%%%%%%%%%%
+
+\documentclass[a4paper,12pt]{article}
+
+% Other options in place of 'report' are 1)article 2)book 3)letter
+% Other options in place of 'a4paper' are 1)a5paper 2)b5paper 3)letterpaper 4)legalpaper 5)executivepaper
+
+
+ %%%%%%%%%%%%  Include Packages  %%%%%%%%%%%%%%
+
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[a4paper,left=1.18in,right=1.18in,top=0.98in,bottom=0.98in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,1}
+
+
+ %%%%%%%%%%%%  Define Colors For Hyperlinks  %%%%%%%%%%%%%%
+
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Page Margins  %%%%%%%%%%%%%%
+
+
+\everymath{\displaystyle}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\newlist{custom_Enumerate}{enumerate}{9}
+	\setlist[custom_Enumerate,1]{label=\arabic*)}
+	\setlist[custom_Enumerate,2]{label=\alph*)}
+	\setlist[custom_Enumerate,3]{label=(\roman*)}
+	\setlist[custom_Enumerate,4]{label=(\arabic*)}
+	\setlist[custom_Enumerate,5]{label=(\Alph*)}
+	\setlist[custom_Enumerate,6]{label=(\Roman*)}
+	\setlist[custom_Enumerate,7]{label=\arabic*}
+	\setlist[custom_Enumerate,8]{label=\alph*}
+	\setlist[custom_Enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+	\setlist[itemize]{label=$\cdot$}
+	\setlist[itemize,1]{label=\textbullet}
+	\setlist[itemize,2]{label=$\circ$}
+	\setlist[itemize,3]{label=$\ast$}
+	\setlist[itemize,4]{label=$\dagger$}
+	\setlist[itemize,5]{label=$\triangleright$}
+	\setlist[itemize,6]{label=$\bigstar$}
+	\setlist[itemize,7]{label=$\blacklozenge$}
+	\setlist[itemize,8]{label=$\prime$}
+
+
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+\setstretch{1.08}
+\title{Arreglos en C++}
+\date{}
+
+
+\begin{document}
+\sloppy
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+\advance\leftskip 0.12in
+		\includegraphics[width=5.52in,height=1.58in]{./media/image1.png}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\noindent 
+\vspace{12pt}
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont \textbf{Asignatura:}}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont Estructura de Datos}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont NRC :7233}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont \textbf{Tema}}
+\end{Center}\par
+
+\maketitle
+\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont \textbf{Presentado:}}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont Michael Daniel Murillo LópezID:534830}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont \textbf{DOCENTE: }}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont Segundo Fidel Puerto Garavito}
+\end{Center}\par
+
+
+\noindent \begin{Center}
+{\fontsize{14pt}{14pt}\selectfont Colombia Ciudad De Bogotá D.C\hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}septiembre 27 de 2017}
+\end{Center}\par
+
+
+\noindent \begin{justify}
+Crear un programa en C++ donde implemente los siguientes requisitos
+\end{justify}\par
+
+
+\noindent \begin{justify}
+Una empresa solicita un programa donde busquen por el número de torre y apartamento. Utilizando Arreglos.
+\end{justify}\par
+
+
+\noindent \begin{justify}
+Los arrays, arreglos o vectores forman parte de la amplia variedad de estructuras de datos que nos ofrece C++, siendo además una de las principales y más útiles estructuras que podremos tener como herramienta de programación
+\end{justify}\par
+
+
+\noindent \begin{justify}
+
+\end{justify}
+\vspace{12pt}
+\noindent {\fontsize{10pt}{10pt}\selectfont $\#$include <iostream> \textit{// librerias}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $\#$include <string>}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $\#$include <list> \textit{//manejos de listas}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $\#$include <fstream> \textit{//manejo de archivos}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $\#$include <cctype>}\par
+
+
+\noindent \begin{justify}
+se incluyen ciertos archivos llamados bibliotecas más comúnmente librerías. Las bibliotecas contienen el código objeto de muchos programas que permiten hacer cosas comunes, como leer el teclado, escribir en la pantalla, manejar números, realizar funciones matemáticas, etc.
+\end{justify}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont using namespace std;}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//clase que representa un apartamento}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont class Apartamento $ \{ $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont public:}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont int piso;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont int apto;}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $;}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//lista de pisos}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont list<Apartamento> apartamentos[100];}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont int n = 0;}\par
+
+
+\noindent Creamos las clases enteresa de piso y apartemento en el cual llegan las funciones enteras.\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{// compara dos apartamentos para ordenarlos ascendentemente}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont bool compararAsc(const Apartamento$\&$ first, const Apartamento$\&$ second) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont return (first.apto < second.apto);}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{// compara dos apartamentos para ordenarlos descendentemente}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont bool compararDesc(const Apartamento$\&$ first, const Apartamento$\&$ second) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont return (first.apto > second.apto);}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \begin{justify}
+Analizar dos o más objetos para luego poder establecer las diferencias y las semejanzas que mantienen entre sí.
+\end{justify}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{// ordena~ orden ascendente}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void ordenarAsc() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int i = 0; i < 26; i++) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont apartamentos[i].sort(compararAsc);}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{// ordena en orden descendente}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void ordenarDesc() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int i = 0; i < 26; i++) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont apartamentos[i].sort(compararDesc);}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+\begin{adjustwidth}{0.49in}{0.0in}
+\begin{justify}
+Se pueden ordenar filas completas o solamente las celdas seleccionadas, basándose en la primera columna de la selección. Si sus datos consisten en filas de hechos relacionados entre sí, ordenar por filas completas es más seguir; de otra manera, sus registros pueden mezclarse fácilmente!Usar el diálogo Ordenar es más flexible que hacerlo mediante los botones de la barra de herramientas. El diálogo le permitirá seleccionar cuales columna(s) usar como base del ordenamiento.
+\end{justify}\par
+
+\end{adjustwidth}
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{// lista los apartamentos ascendentemente}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void ListarAsc() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//llama al metodo ordenar ascendentemente}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont ordenarAsc();}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//crea un iterador de la lista}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont list<Apartamento>::iterator it;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//imprime mensajes}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Listar Ascendentemente" << endl;}\par
+
+
+\noindent \hspace*{0.49in}
+\vspace{12pt}
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//itera en las 26 listas}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int i = 0;i < n;i++) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Piso:"<<(i+1)<<endl;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//imprime la lista de apartamentos de la letra i}}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (it = apartamentos[i].begin(); it != apartamentos[i].end(); ++it) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont std::cout << it->apto << "$\textbackslash$t";}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//similar a ordenar ascendentemente solo que lo hace al contrario}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void ListarDesc() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont ordenarDesc();}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont list<Apartamento>::iterator it;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Listar Descendentemente" << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int i = n-1;i >= 0;i--) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Piso:" << (i + 1) << endl;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (it = apartamentos[i].begin(); it != apartamentos[i].end(); ++it) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont std::cout << it->apto << "$\textbackslash$t";}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent puede llegar a ser casi tan sencillo como el manejo de la entrada y salida estándar (pantalla y teclado), con la diferencia de que abrimos el fichero (\textit{open}) antes de trabajar con él y lo cerramos (\textit{close}) al terminar. Por ejemplo, para escribir una frase en un fichero de texto (que se crearía automáticamente), podríamos usar un fichero de salida (\textit{ofstream})\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//lee el archivo de datos apartamentos.txt}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void leerArchivo() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//abre el archivo}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont std::fstream f("apartamentos.txt", std::ios$ \_ $base::in);}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont string in;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//lee de a 6 lineas que representan un apartamento, cuando llega a la ultima linea no encuentra otro y finalixa}}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//crea el apartamento}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont f >> n;}\par
+
+
+\noindent \hspace*{0.49in}
+\vspace{12pt}
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int i = 0;i < n;i++) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont int apts, num;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont f >> apts;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int j = 0;j < apts;j++) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont Apartamento c;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont c.piso = i + 1;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont f >> c.apto;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont apartamentos[i].push$ \_ $back(c);}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \begin{justify}
+Si lo que queremos es leer una línea de un fichero, sería muy similar, pero usaríamos \textit{ifstream} en vez de \textit{ofstream}, y, si la línea que leemos puede contener espacios (es lo habitual), usaremos \textit{getline} en vez de \textit{>>}, al igual que hacíamos con la entrada desde teclado:
+\end{justify}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//imprime el resument}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void resumen() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Resumen" << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//variable para calcular el total}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont int total = 0;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont for (int i = 0;i < n;i++) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Piso " << i + 1 <<" = " << apartamentos[i].size() <<endl;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont total += apartamentos[i].size();}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "total: " << total;}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+\begin{adjustwidth}{0.49in}{0.0in}
+\begin{justify}
+Podemos querer añadir al final de un fichero que ya existe, o modificar cualquier posición intermedia del fichero, o abrir un fichero de forma que podamos tanto leer de él como escribir en él. Para esas cosas, en vez de usar \textit{ofstream} o \textit{ifstream} usaremos un tipo de fichero más genérico, el \textit{fstream}, que nos permite indicar el modo de apertura (lectura o escritura, texto o binario, etc).
+\end{justify}\par
+
+\end{adjustwidth}
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//imprime menu}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont void menu() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont system("cls");}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "1. Listar Ordenado del primer piso al ultimo " << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "2. Listar Ordenado del ultimo al primero" << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "3. Resumen Edificio" << endl;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "4. Salir" << endl;}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \begin{justify}
+son una estructura de control condicional, que permite definir múltiples casos que puede llegar a cumplir una variable o cualquiera, y qué acción tomar en cualquiera de estas situaciones. Incluso es posible determinar qué acción llevar a cabo en caso de no cumplir ninguna de las condiciones dadas.
+\end{justify}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont \textit{//metodo principal}}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont int main() $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//lee el archivo}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont leerArchivo();}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont int opt;}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//por siempre...}}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont while (true) $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//imprime menu}}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont menu();}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << "Digite opcion: ";}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cin >> opt;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont \textit{//dependiendo de la opcion ingresada se accede a uno de los siguientes casos, si el usuario digita una opcion invalida se termina el programa}}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont switch (opt)}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \{ $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont case 1:}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont ListarAsc();}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont break;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont case 2:}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont ListarDesc();}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont break;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont case 3:}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont resumen();}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont break;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont default:}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont exit(0);}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont break;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont cout << endl;}\par
+
+
+\noindent \hspace*{0.49in}\hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont system("pause");}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont system("pause");}\par
+
+
+\noindent \hspace*{0.49in}{\fontsize{10pt}{10pt}\selectfont return 0;}\par
+
+
+\noindent {\fontsize{10pt}{10pt}\selectfont $ \} $}\par
+
+
+\noindent \begin{justify}
+Los condicionales switch de hecho todos los condicionales en sí, son extremadamente útiles pues permiten definirle a nuestro software múltiples vías de ejecución contemplando así todas las posibilidades durante la ejecución. Me gustaría hacer una leve aclaración, el condicional switch encuentra su utilidad al momento de tener más de una posibilidad de valores para una variable cualquiera, evidentemente si nuestra variable solo puede adquirir un valor útil para nosotros, nuestra alternativa inmediata debería ser un if o un if-else, no un switch que resulta un poco más engorroso de escribir, sin embargo cuando tenemos varias posibilidades es mejor un switch que tener condicionales anidados o un condicional después de otro.
+\end{justify}\par
+
+\end{document}
